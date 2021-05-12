@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
+import { ClassicModePage } from "./pages/classic/classic";
+import { InteractiveModePage } from "./pages/interactive/interactive";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/classic">Classic</Link>
+            </li>
+            <li>
+              <Link to="/interactive">Interactive</Link>
+            </li>
+          </ul>
+        </nav>
+        <Switch>
+          <Route path="/classic">
+            <ClassicModePage></ClassicModePage>
+          </Route>
+          <Route path="/interactive">
+            <InteractiveModePage></InteractiveModePage>
+          </Route>
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 
