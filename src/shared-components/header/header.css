@@ -1,0 +1,23 @@
+.header {
+  height: 3rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  flex: 1 1 0px;
+  text-align: center;
+}
+
+li a {
+  font-size: 1.75rem;
+  line-height: 3rem;
+  text-decoration: none;
+}
+
+li a:hover {
+  opacity: 0.8;
+}

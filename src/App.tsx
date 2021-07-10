@@ -1,32 +1,35 @@
 import "./App.css";
-import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
-import { ClassicModePage } from "./pages/classic/classic";
-import { InteractiveModePage } from "./pages/interactive/interactive";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import Header from "./shared-components/header/header";
+import HomePage from "./pages/home/home-page";
+import AboutPage from "./pages/about/about-page";
+import ExperiencePage from "./pages/experience/experience-page";
+import ContactsPage from "./pages/contacts/contacts-page";
 
 function App() {
     return (
-        <BrowserRouter>
-            <div>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to="/classic">Classic</Link>
-                        </li>
-                        <li>
-                            <Link to="/interactive">Interactive</Link>
-                        </li>
-                    </ul>
-                </nav>
-                <Switch>
-                    <Route path="/classic">
-                        <ClassicModePage></ClassicModePage>
-                    </Route>
-                    <Route path="/interactive">
-                        <InteractiveModePage></InteractiveModePage>
-                    </Route>
-                </Switch>
-            </div>
-        </BrowserRouter>
+        <div className="page-container light-theme">
+            <BrowserRouter>
+                <div>
+                    <Header></Header>
+                    <Switch>
+                        <Route path="/home">
+                            <HomePage></HomePage>
+                        </Route>
+                        <Route path="/about">
+                            <AboutPage></AboutPage>
+                        </Route>
+                        <Route path="/experience">
+                            <ExperiencePage></ExperiencePage>
+                        </Route>
+                        <Route path="/contacts">
+                            <ContactsPage></ContactsPage>
+                        </Route>
+                        <Route render={() => (<Redirect to="/home" />)}></Route>
+                    </Switch>
+                </div>
+            </BrowserRouter>
+        </div>
     );
 }
 
