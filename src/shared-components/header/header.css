@@ -1,5 +1,6 @@
 .header {
   height: 3rem;
+  border-bottom: 1px solid rgba(255,255,255,.2);
 }
 
 ul {
@@ -16,6 +17,8 @@ li a {
   font-size: 1.75rem;
   line-height: 3rem;
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
 li a:hover {
