@@ -5,6 +5,7 @@ import HomePage from "./pages/home/home-page";
 import AboutPage from "./pages/about/about-page";
 import ExperiencePage from "./pages/experience/experience-page";
 import ContactsPage from "./pages/contacts/contacts-page";
+import DynamicBgComponent from "./shared-components/dynamic-bg/dynamic-bg";
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
                         </Route>
                         <Route render={() => (<Redirect to="/home" />)}></Route>
                     </Switch>
+                    <DynamicBgComponent></DynamicBgComponent>
                 </div>
             </BrowserRouter>
         </div>
