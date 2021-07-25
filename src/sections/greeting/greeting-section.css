@@ -1,0 +1,16 @@
+.greeting_photo {
+  border-radius: 10px;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.greeting_photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.greeting_text {
+  grid-column-start: 5;
+  grid-column-end: 11;
+}

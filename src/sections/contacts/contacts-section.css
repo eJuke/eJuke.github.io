@@ -1,0 +1,25 @@
+.contacts_title {
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+
+.contacts_list {
+  grid-column-start: 7;
+  grid-column-end: 11;
+}
+
+.contacts_contact-list {
+  padding-top: 0.4rem;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts_contact {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.contacts_contact-icon {
+  margin-right: 0.8rem;
+}

@@ -1,0 +1,30 @@
+.header {
+  height: 5rem;
+  position: fixed;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_logo {
+  font-size: 3rem;
+}
+
+.header_links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header_link {
+  margin-left: 1rem;
+  line-height: 3rem;
+}
+
+.header_link:first-child {
+  margin-left: 0;
+}

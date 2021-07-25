@@ -1,0 +1,41 @@
+.career-highlight_timeline {
+  grid-column-end: 1;
+  grid-column-end: 2;
+  position: relative;
+  overflow: hidden;
+}
+
+.career-highlight_info {
+  grid-column-start: 2;
+  grid-column-end: 11;
+  padding-bottom: 1rem;
+}
+
+.career-highlight_timeline-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.career-highlight_timeline-icon svg {
+  font-size: 1.5rem;
+}
+
+.career-highlight_timeline-line {
+  position: absolute;
+  top: 3rem;
+  height: 100%;
+  width: 2px;
+  background-color: black;
+  left: 1.5rem;
+  z-index: 1;
+}
+
+.career-highlight_timings,
+.career-highlight_description {
+  margin-bottom: 0.5rem;
+}

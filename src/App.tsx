@@ -1,32 +1,21 @@
 import "./App.css";
-import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
-import { ClassicModePage } from "./pages/classic/classic";
-import { InteractiveModePage } from "./pages/interactive/interactive";
+import { Header } from "./components/header/header";
+import { CareerSection } from "./sections/career/career-section";
+import { ContactsSection } from "./sections/contacts/contacts-section";
+import { GreetingSection } from "./sections/greeting/greeting-section";
+import { SkillsSection } from "./sections/skills/skills-section";
 
 function App() {
     return (
-        <BrowserRouter>
-            <div>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to="/classic">Classic</Link>
-                        </li>
-                        <li>
-                            <Link to="/interactive">Interactive</Link>
-                        </li>
-                    </ul>
-                </nav>
-                <Switch>
-                    <Route path="/classic">
-                        <ClassicModePage></ClassicModePage>
-                    </Route>
-                    <Route path="/interactive">
-                        <InteractiveModePage></InteractiveModePage>
-                    </Route>
-                </Switch>
+        <div className="light-theme">
+            <Header></Header>
+            <div className="page-container">
+                <GreetingSection></GreetingSection>
+                <SkillsSection></SkillsSection>
+                <CareerSection></CareerSection>
+                <ContactsSection></ContactsSection>
             </div>
-        </BrowserRouter>
+        </div>
     );
 }
 
