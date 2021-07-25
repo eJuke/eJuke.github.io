@@ -5,6 +5,13 @@
    License: none (public domain)
 */
 
+:root {
+  --light-theme-bg: #eeeff1;
+  --light-theme-text: #011502;
+  --dark-theme-bg: #203139;
+  --dark-theme-text: #f1e9db;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -80,46 +87,67 @@ a {
   text-decoration: none;
 }
 
-.light-theme,
-.light-theme .header {
-  background-color: #eeeff1;
+.theme {
+  transition: background-color .3s 0s ease-in-out, color .3s 0s ease-in-out;
+}
+
+.theme .career-highlight_timeline-line,
+.theme .header_theme-toggle .toggle:after {
+  transition: background-color .3s 0s ease-in-out;
+}
+
+.theme a {
+  transition: color .3s 0s ease-in-out;
+}
+
+.theme .career-highlight_timeline-icon,
+.theme .tag,
+.theme .header_theme-toggle .toggle {
+  transition: border-color .3s 0s ease-in-out;
+}
+
+.light-theme {
+  background-color: var(--light-theme-bg);
 }
 
 .light-theme,
 .light-theme a {
-  color: #011502;
+  color: var(--light-theme-text);
 }
 
-.light-theme .career-highlight_timeline-line {
-  background-color: #011502;
+.light-theme .career-highlight_timeline-line,
+.light-theme .header_theme-toggle .toggle:after {
+  background-color: var(--light-theme-text);
 }
 
 .light-theme .career-highlight_timeline-icon,
-.light-theme .tag {
-  border-color: #011502;
+.light-theme .tag,
+.light-theme .header_theme-toggle .toggle {
+  border-color: var(--light-theme-text);
 }
 
 .light-theme a:hover {
   opacity: .7;
 }
 
-.dark-theme,
-.dark-theme .header {
-  background-color: #203139;
+.dark-theme {
+  background-color: var(--dark-theme-bg);
 }
 
 .dark-theme,
 .dark-theme a {
-  color: #F1E9DB;
+  color: var(--dark-theme-text);
 }
 
-.dark-theme .career-highlight_timeline-line {
-  background-color: #F1E9DB;
+.dark-theme .career-highlight_timeline-line,
+.dark-theme .header_theme-toggle .toggle:after {
+  background-color: var(--dark-theme-text);
 }
 
 .dark-theme .career-highlight_timeline-icon,
-.dark-theme .tag {
-  border-color: #F1E9DB;
+.dark-theme .tag,
+.dark-theme .header_theme-toggle .toggle {
+  border-color: var(--dark-theme-text);
 }
 
 .dark-theme a:hover {

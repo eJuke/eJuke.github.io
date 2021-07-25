@@ -25,7 +25,7 @@ export function CareerHighlight({
 }:{
     highlight: Highlight,
     isLastItem: boolean,
-    children?: any, // todo: determine why children prop is required here (otherwise causes ts type errors)
+    children?: unknown, // todo: determine why children prop is required here (otherwise causes ts type errors)
 }) {
 
     const getIcon = () => {

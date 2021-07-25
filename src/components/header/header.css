@@ -1,17 +1,21 @@
 .header {
-  height: 5rem;
+  height: 4rem;
   position: fixed;
   width: 100%;
   padding: 1rem 0;
+  background-color: inherit;
+  z-index: 3;
 }
 
-.header_container {
+.header_container,
+.header_links {
   display: flex;
   justify-content: space-between;
 }
 
 .header_logo {
-  font-size: 3rem;
+  font-size: 2rem;
+  line-height: 2rem;
 }
 
 .header_links ul {
@@ -21,10 +25,41 @@
 }
 
 .header_link {
-  margin-left: 1rem;
-  line-height: 3rem;
+  margin-right: 1rem;
+  line-height: 2rem;
 }
 
-.header_link:first-child {
-  margin-left: 0;
+.header_theme-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.header_theme-toggle .toggle {
+  display: inline-block;
+  width: 2rem;
+  height: 1rem;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  position: relative;
+  margin: 0 0.5rem;
+}
+
+.header_theme-toggle .toggle:after {
+  content: "";
+  display: block;
+  width: calc(50% + 2px);
+  height: calc(100% + 2px);
+  border-radius: 50%;
+  position: absolute;
+  top: -1px;
+  background-color: black;
+  transition: left .3s 0s ease-in-out;
+}
+
+.header_theme-toggle.header_theme-toggle_light .toggle:after {
+  left: -1px;
+}
+
+.header_theme-toggle.header_theme-toggle_dark .toggle:after {
+  left: calc(50% - 1px);
 }
