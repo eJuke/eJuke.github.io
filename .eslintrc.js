@@ -20,7 +20,7 @@ module.exports = {
     rules: {
         "quotes": ["error", "double"],
         "no-var": "error",
-        "indent": ["error", 4],
+        "indent": ["error", 4, { SwitchCase: 1 }],
         "@typescript-eslint/explicit-module-boundary-types": "off",
     },
 };
