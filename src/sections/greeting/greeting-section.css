@@ -2,6 +2,7 @@
   border-radius: 10px;
   grid-column-start: 1;
   grid-column-end: 5;
+  align-self: start;
 }
 
 .greeting_photo img {
@@ -13,4 +14,21 @@
 .greeting_text {
   grid-column-start: 5;
   grid-column-end: 11;
+}
+
+@media screen and (max-width: 600px) {
+
+  .greeting_photo,
+  .greeting_text {
+    grid-column-start: 1;
+    grid-column-end: 11;
+  }
+
+  .greeting_photo img {
+    max-width: 300px;
+  }
+
+  .greeting_text {
+    margin-top: 1rem;
+  }
 }

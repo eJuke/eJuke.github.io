@@ -23,3 +23,34 @@
 .contacts_contact-icon {
   margin-right: 0.8rem;
 }
+
+@media screen and (max-width: 1000px) {
+
+  .contacts_contact {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .contacts_contact-icon {
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+
+  .contacts_title,
+  .contacts_list {
+    grid-column-start: 1;
+    grid-column-end: 11;
+  }
+
+  .contacts_title {
+    text-align: center;
+  }
+
+  .contacts_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

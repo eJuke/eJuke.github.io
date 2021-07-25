@@ -88,11 +88,16 @@ a {
 }
 
 .theme {
-  transition: background-color .3s 0s ease-in-out, color .3s 0s ease-in-out;
+  transition: background-color .3s 0s ease-in-out,
+    color .3s 0s ease-in-out;
 }
 
-.theme .career-highlight_timeline-line,
-.theme .header_theme-toggle .toggle:after {
+.theme .career-highlight_timeline-icon {
+  transition: background-color .3s 0s ease-in-out,
+    border-color .3s 0s ease-in-out;
+}
+
+.theme .career-highlight_timeline-line {
   transition: background-color .3s 0s ease-in-out;
 }
 
@@ -100,13 +105,13 @@ a {
   transition: color .3s 0s ease-in-out;
 }
 
-.theme .career-highlight_timeline-icon,
 .theme .tag,
 .theme .header_theme-toggle .toggle {
   transition: border-color .3s 0s ease-in-out;
 }
 
-.light-theme {
+.light-theme,
+.light-theme .career-highlight_timeline-icon {
   background-color: var(--light-theme-bg);
 }
 
@@ -130,7 +135,8 @@ a {
   opacity: .7;
 }
 
-.dark-theme {
+.dark-theme,
+.dark-theme .career-highlight_timeline-icon {
   background-color: var(--dark-theme-bg);
 }
 
@@ -155,12 +161,12 @@ a {
 }
 
 .page-container {
-  margin: 0 30px;
   padding-top: 5rem;
 }
 
 .wrapper {
   max-width: 1140px;
+  padding: 0 30px;
   margin: 0 auto;
 }
 
@@ -214,16 +220,59 @@ h2 {
   padding-bottom: 5rem;
 }
 
-/* 
-.flex {
-  display: flex;
+@media screen and (max-width: 1140px) {
+
+  html {
+    font-size: 18px;
+  }
+
+  .section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
 }
 
-.flex-nowrap {
-  flex-wrap: nowrap;
+@media screen and (max-width: 1000px) {
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .grid {
+    column-gap: 2rem;
+  }
 }
 
-.flex-row {
-  flex-direction: row;
-} */
+@media screen and (max-width: 760px) {
 
+  html {
+    font-size: 16px;
+  }
+
+  .section {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .text-bigger {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    column-gap: 1rem;
+  }
+
+  .wrapper {
+    padding: 0 1rem;
+  }
+}

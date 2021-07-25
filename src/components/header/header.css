@@ -53,7 +53,6 @@
   position: absolute;
   top: -1px;
   background-color: black;
-  transition: left .3s 0s ease-in-out;
 }
 
 .header_theme-toggle.header_theme-toggle_light .toggle:after {
@@ -62,4 +61,11 @@
 
 .header_theme-toggle.header_theme-toggle_dark .toggle:after {
   left: calc(50% - 1px);
+}
+
+@media screen and (max-width: 600px) {
+
+  .header_links ul {
+    display: none;
+  }
 }

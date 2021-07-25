@@ -53,7 +53,7 @@ export function CareerSection() {
 
     return <div className="career section" id="career">
         <div className="wrapper">
-            <h2>Career</h2>
+            <h2>Experience</h2>
             {careerHighlightList.map((highlight, index) => {
                 return <CareerHighlight
                     key={index}

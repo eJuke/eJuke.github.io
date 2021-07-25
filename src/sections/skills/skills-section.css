@@ -8,3 +8,16 @@
   grid-column-start: 7;
   grid-column-end: 11;
 }
+
+@media screen and (max-width: 760px) {
+
+  .skills_description,
+  .skills_tags {
+    grid-column-start: 1;
+    grid-column-end: 11;
+  }
+
+  .skills_tags {
+    padding-top: 1.5rem;
+  }
+}
