@@ -16,6 +16,7 @@
 .header_logo {
   font-size: 2rem;
   line-height: 2rem;
+  cursor: default;
 }
 
 .header_links ul {
@@ -32,16 +33,18 @@
 .header_theme-toggle {
   display: flex;
   align-items: center;
+  font-size: 1rem;
 }
 
 .header_theme-toggle .toggle {
   display: inline-block;
-  width: 2rem;
-  height: 1rem;
+  width: 2em;
+  height: 1em;
   border: 2px solid black;
-  border-radius: 0.5rem;
+  border-radius: 0.5em;
   position: relative;
   margin: 0 0.5rem;
+  cursor: pointer;
 }
 
 .header_theme-toggle .toggle:after {
@@ -67,5 +70,9 @@
 
   .header_links ul {
     display: none;
+  }
+
+  .header_theme-toggle {
+    font-size: 1.5rem;
   }
 }
