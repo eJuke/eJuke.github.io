@@ -18,7 +18,7 @@ export function ContactsSection() {
         <div className="wrapper">
             <div className="grid grid-10">
                 <div className="contacts_title">
-                    <h2>Feel free to reach me out</h2>
+                    <h2>Feel free to contact me</h2>
                 </div>
                 <div className="contacts_list">
                     <ul className="contacts_contact-list">

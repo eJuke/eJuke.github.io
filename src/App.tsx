@@ -4,7 +4,7 @@ import { Header, Theme } from "./components/header/header";
 import { CareerSection } from "./sections/career/career-section";
 import { ContactsSection } from "./sections/contacts/contacts-section";
 import { GreetingSection } from "./sections/greeting/greeting-section";
-import { SkillsSection } from "./sections/skills/skills-section";
+import { AboutMeSection } from "./sections/about-me/about-me-section";
 
 const THEME_STORAGE_KEY = "selectedTheme";
 
@@ -32,7 +32,7 @@ export function App() {
                 setTheme={setTheme}></Header>
             <div className="page-container">
                 <GreetingSection></GreetingSection>
-                <SkillsSection></SkillsSection>
+                <AboutMeSection></AboutMeSection>
                 <CareerSection></CareerSection>
                 <ContactsSection></ContactsSection>
             </div>

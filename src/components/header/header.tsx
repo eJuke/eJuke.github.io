@@ -39,9 +39,9 @@ export function Header({
                 <nav className="header_links">
                     <ul>
                         <li className="header_link text-bold">
-                            <a href="#skills"
-                                onClick={(event) => scrollTo(event, "#skills")}>
-                                Skills
+                            <a href="#about-me"
+                                onClick={(event) => scrollTo(event, "#about-me")}>
+                                About me
                             </a>
                         </li>
                         <li className="header_link text-bold">

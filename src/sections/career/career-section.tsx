@@ -9,14 +9,14 @@ export function CareerSection() {
             position: "Front End Developer",
             timings: "Dec 2017 - Current",
             descriptionParagraphs: [
-                "My project is related to USA-based vehicle-to-government system for car dealers. We support a bunch of projects that help our customers to sale cars, generate and sign docs, pay taxes/fees and receive their number plates when all of this done.",
-                "My role here is a front end developer. Projects are mostly based on Angular and asp.net, but some services run on Java.",
+                "Working as an out staff engineer for MVSC USA. The company creates a solution for USA-based dealership vehicle management and vehicle registrations (including interaction with government services).",
+                "My role here is a front-end developer in core UI team. As a developer, I support most of the company projects, e.g., forms, payment gates, admin panel etc.",
                 "Achievements:",
-                "- Providing migration from AngularJS (v1) to the new Angular (v2+) - this is still in progress",
-                "- Implemented unit and screenshot tests infrastructure and helped integrate testing into our development process",
-                "- Constantly improved our build system that's based on webpack",
+                "- Integrated unit testing into our development process. Implemented unit test infrastructure from scratch",
+                "- Improved out webpack builder, that resulted in a 30 percent decrease in build duration.",
+                "- Supported AngularJs -> Angular migration process (this is still in progress, 80% of migration is complete)",
             ],
-            skills: ["Angular", "TypeScript"]
+            skills: ["Angular", "AngularJs", "TypeScript", "RxJs"]
         },
         {
             type: HighlightType.JOB_POSITION,
@@ -24,11 +24,11 @@ export function CareerSection() {
             position: "Full Stack Developer",
             timings: "Apr 2017 - Dec 2017",
             descriptionParagraphs: [
-                "We make a device for self-driving cars to send driving data into the cloud and connect to another devices of the same type (kind of a mesh network).",
-                "My main responsibility is a device control server. It's based on ASP.net Core MVC and run in Azure cloud.",
-                "Also some part of my worktime is dedicated to Node.js API server that's used to collect IoT vehicle data via message broker (MQTT)",
+                "Was a part of company's researching team. As a team, we developed IoT devices for vehicles (areas: vehicle self-check, mesh network communication between self-driving vehicles).",
+                "Most of the time I supported core control server for our devices - managed both front-end and back-end parts. Also, I was involved in a message server development, that received and handled messages from MQTT broker.",
+                "During my free time, I helped my teammates with UI part (AngularJs) on their side project - GPS tracking system for boats.",
             ],
-            skills: ["Javascript", "C#", "ASP.NET", "jQuery", "Node.js", "MQTT", "Azure"]
+            skills: ["Javascript", "C#", "ASP.NET", "jQuery", "Node.js", "MQTT", "Azure", "AngularJs"]
         },
         {
             type: HighlightType.JOB_POSITION,
@@ -36,7 +36,8 @@ export function CareerSection() {
             position: "Front End Developer",
             timings: "Jun 2016 - Jan 2017",
             descriptionParagraphs: [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu non odio euismod lacinia at quis risus. Sit amet massa vitae tortor condimentum.",
+                "This is a small web agency in Saint-Petersburg. As a team member, I supported UI part of the site development process: created new markup, supported current projects, was involved into design discussions.",
+                "Technology stack: mostly HTML & CSS (with preprocessors - Pug, Sass, Less), also created some simple components with JavaScript and jQuery.",
             ],
             skills: ["Javascript", "jQuery", "HTML", "CSS", "Bootstrap"]
         },
@@ -46,7 +47,7 @@ export function CareerSection() {
             position: "Student",
             timings: "Sep 2013 - Feb 2019",
             descriptionParagraphs: [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu non odio euismod lacinia at quis risus. Sit amet massa vitae tortor condimentum.",
+                "Spent 6 years to master my CS specialty: \"Information security\". Paid more attention to software development courses during my university years.",
             ],
         }
     ]
