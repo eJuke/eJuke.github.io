@@ -1,17 +1,15 @@
 import "./contacts-section.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin, faTelegram } from "@fortawesome/free-brands-svg-icons";
 
 export function ContactsSection() {
 
     const contactList = [
-        { link: "https://t.me/e_voynov", text: "e_voynov", icon: faTelegram },
         { link: "mailto:voynov.ev@gmail.com", text: "voynov.ev@gmail.com", icon: faEnvelope },
-        { link: "tel:+79062558919", text: "+7 (906) 255-8919", icon: faPhoneAlt },
+        { link: "https://www.linkedin.com/in/evgeniy-voynov-710487175/", text: "Evgeniy Voynov", icon: faLinkedin },
+        { link: "https://t.me/e_voynov", text: "e_voynov", icon: faTelegram },
         { link: "https://github.com/eJuke", text: "eJuke", icon: faGithub },
-        { link: "https://www.linkedin.com/in/evgeniy-voynov-710487175/", text: "Evgeniy Voynov", icon: faLinkedin }
     ];
 
     return <div className="contacts section" id="contacts">
